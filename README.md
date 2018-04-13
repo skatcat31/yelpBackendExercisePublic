@@ -59,10 +59,15 @@ It must communicate with Yelp API's '/business/search' endpoint, and return the 
   }
 ]
 ```
+When communicating with the Yelp API, use the following search parameters:
 
+1.  The latitude and longitude provided in the request body to search by location (the city names in the request body will not be used when communicating with the Yelp API).  
+2.  'Radius' should equal 800
+3.  Pay special attention to the 'limit' and 'offset' parameters, to ensure that all available information for each location is being retrieved from the endpoint.  
 
-...and must return a response body with the following structure
+***
 
+A simple Express server has been provided as part of this repo, along with a package.json file.  Use this to familiarize yourself with npm libraries that will be helpful in completing this exercise.  That said, if you have libraries that you'd prefer to use, feel free to use them instead.  
 
 
 Get the product key:
