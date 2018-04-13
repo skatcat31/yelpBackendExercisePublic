@@ -2,6 +2,8 @@
 
 Welcome to the backend coding exercise for the SPJ Solutions Software Development team!  Backend work on our Citopus product involves a great deal of communication with third party API.  As a result, we've structured this exercise to examine your ability write asynchronous code and to work with third party API.  
 
+***
+
 ## THE EXERCISE:
 
 For this exercise, you're given a simple Node Express server.  We'd like you to build out an endpoint that pulls business information from the Yelp API. 
