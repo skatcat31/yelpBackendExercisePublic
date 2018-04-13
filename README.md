@@ -1,16 +1,14 @@
 # yelpBackendExercisePublic
 
-Welcome to the backend coding exercise for the SPJ Solutions software development team!  
-
-WHY:
-
-Backend work on our Citopus product involves a great deal of HTTP requests to endpoints on our server and also requires a great deal of data pulling from third party API.  
+Welcome to the backend coding exercise for the SPJ Solutions software development team!  Backend work on our Citopus product involves a great deal of HTTP requests to endpoints on our server and also requires a great deal of data pulling from third party API.  As a result, we've structured this exercise to examine your ability to work with third party API.  
 
 THE EXERCISE:
 
-For this exercise, you're given a simple Node Express server.  We'd like you to build out an endpoint that pulls business information from the Yelp API.  
+For this exercise, you're given a simple Node Express server.  We'd like you to build out an endpoint that pulls business information from the Yelp API. 
 
-The endpoint will accept the following request body:
+A link to documentation about the Yelp API 'business search' endpoint can be found here:  https://www.yelp.com/developers/documentation/v3/business_search
+
+The endpoint that you create will accept the following request body:
 
 ```
 [
@@ -65,17 +63,7 @@ When communicating with the Yelp API, use the following search parameters:
 2.  'Radius' should equal 800
 3.  Pay special attention to the 'limit' and 'offset' parameters, to ensure that all available information for each location is being retrieved from the endpoint.  
 
+Also be aware that to communicate with the Yelp API, you will need a product key.  Here's a link to documentation for how to obtain one:  https://www.yelp.com/developers/documentation/v3/authentication
 ***
 
 A simple Express server has been provided as part of this repo, along with a package.json file.  Use this to familiarize yourself with npm libraries that will be helpful in completing this exercise.  That said, if you have libraries that you'd prefer to use, feel free to use them instead.  
-
-
-Get the product key:
-
-https://www.yelp.com/developers/documentation/v3/authentication
-
-We're going make use of Yelps' business search endpoint:
-
-https://www.yelp.com/developers/documentation/v3/business_search
-
-
