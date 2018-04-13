@@ -16,7 +16,7 @@ Latitudes and Longitudes:
 
 
 INPUT OBJECT:
-'''
+```
 [
   {
     location: 'New York',
@@ -40,4 +40,4 @@ INPUT OBJECT:
     longitude: -122.431297,
   }
 ]
-'''
+```
