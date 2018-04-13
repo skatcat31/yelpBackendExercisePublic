@@ -70,5 +70,3 @@ Also be aware that to communicate with the Yelp API, you will need a product key
 ***
 
 A simple Express server has been provided as part of this repo, along with a package.json file.  Use this to familiarize yourself with npm libraries that will be helpful in completing this exercise.  That said, if you have libraries that you'd prefer to use, feel free to use them instead.  
-
-## WHAT WE'RE LOOKING FOR
