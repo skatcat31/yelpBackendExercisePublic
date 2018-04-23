@@ -63,7 +63,7 @@ When communicating with the Yelp API, use the following search parameters:
 
 1.  The latitude and longitude provided in the request body to search by location (the city names in the request body will not be used when communicating with the Yelp API).  
 2.  'Radius' should equal 800
-3.  Pay special attention to the 'limit' and 'offset' parameters
+3.  Pay special attention to the 'limit' and 'offset' parameters (and bear in mind that every response from the API will have a property called 'total', which gives the total number of response items available for a particular search).
 4.  Ensure that all available information for each location is being retrieved from the endpoint.  
 
 ***
