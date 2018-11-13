@@ -13,7 +13,7 @@ module.exports = {
 }
 
 /**
- * 
+ * Middleware to check if the body has all correct arguments, otherwise send a 400 status
  * @param {obj} body The request body parsed as JSON from the `express.request` instance
  * @param {obj} res An instance of `express.response`
  * @param {function} next An instance of `express.next`
@@ -28,7 +28,12 @@ function bodyInspector({ body }, res, next) {
   next();
 }
 
-
+/**
+ * Takes body contents and send parameters to YELP API using plugin at '../plugins/YELP.api.module' method getLocation
+ * @param {object} req The `express` request instance
+ * @param {object} res The `express` response instance
+ * @param {function} next The `express` next handler
+ */
 async function handler(req, res, next) {
   {
     // has a proper body
@@ -62,6 +67,14 @@ async function handler(req, res, next) {
   }
 }
 
+/**
+ * A simple JSON error handler in production mode that will attempt to return a JSON error instead of a plaintext error
+ * @param {object} error A nodeJS error
+ * @param {number} error.statusCode A number representing an HTTP Status( default: 500 )
+ * @param {object} req The `express` request instance, used here for footprint typing for `express` purposes
+ * @param {object} res The `express` response instance
+ * @param {function} next The `express` next function. Used as a fallback to default error handler for `express` if not in production
+ */
 function errorHandler (error, req, res, next) {
   if (NODE_ENV != 'production')
     return next(error);
