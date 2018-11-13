@@ -24,7 +24,7 @@ function bodyInspector({ body }, res, next) {
     !Array.isArray(body)
     || body.find(isNOTLocationObject)
   )
-    return res.status(400).send({ error: 'The body must be an Array of Locations as defined by Spec VXXX' })
+    return res.status(400).send({ code: 400, error: 'The body must be an Array of Locations as defined by Spec VXXX' })
   next();
 }
 
