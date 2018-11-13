@@ -81,7 +81,6 @@ function getLocation({ location, latitude, longitude, radius = 800, page = 0, fe
         }
         P = Promise.all(businesses)
       }
-      /**/
 
       return P
         .then(resultArrs => {
