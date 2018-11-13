@@ -15,25 +15,25 @@ The endpoint that you create will accept the following request body:
 ```
 [
   {
-    location: 'New York',
-    latitude: 40.785091,
-    longitude: -73.968285,
+    "location": "New York",
+    "latitude": 40.785091,
+    "longitude": -73.968285,
   }, {
-    location: 'Boston',
-    latitude: 42.361145,
-    longitude: -71.057083,
+    "location": "Boston",
+    "latitude": 42.361145,
+    "longitude": -71.057083,
   }, {
-    location: 'Washington DC',
-    latitude: 38.889931,
-    longitude: -77.009003,
+    "location": "Washington DC",
+    "latitude": 38.889931,
+    "longitude": -77.009003,
   }, {
-    location: 'Chicago',
-    latitude: 41.881832,
-    longitude: -87.623177,
+    "location": "Chicago",
+    "latitude": 41.881832,
+    "longitude": -87.623177,
   }, {
-    location: 'San Francisco',
-    latitude: 37.773972,
-    longitude: -122.431297,
+    "location": "San Francisco",
+    "latitude": 37.773972,
+    "longitude": -122.431297,
   }
 ]
 ```
