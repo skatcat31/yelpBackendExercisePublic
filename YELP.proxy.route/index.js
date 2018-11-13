@@ -65,7 +65,7 @@ async function handler(req, res, next) {
 function errorHandler (error, req, res, next) {
   if (NODE_ENV != 'production')
     return next(error);
-  const code = error.statusCode;
+  const code = error.statusCode || 500;
   let jason;
   try {
     jason = { code, error: HttpStatus.getStatusText(error.statusCode) };
