@@ -13,11 +13,6 @@ app.locals.plugins = plugins;
 app.use(bodyParser.json());
 
 //Endpoint goes here!
-/*
-  reverse proxy for requests going to Yelp using Body parameters and mapping them to querystrings
-  fetch would be nice, should bring in polyfill...
-*/
-
 app.post(
   YELP_REVERSE_PROXY_ENDPOINT,
   YELP_REVERSE_PROXY_HANDLERS
